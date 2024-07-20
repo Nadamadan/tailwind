@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css tuts | Korsat X Parmaga</title>
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="text-gray-300 bg-gray-900"> <!-- bg (background) -->
+    <div class="main-container px-10 grid grid-cols-3"> <!-- p (padding in all directions) px (padding left , right)  py (padding top , bottom) pt padding top pb padding bottom-->
+        <div class="navigation text-right">
+            <div class="title text-3xl p-5 border-b border-gray-700 text-blue-500">KORSAT <span class="text-blue-300">X</span> PARMAGA</div>
+
+            <div class="links">
+                <div class="link px-5 py-3 border-r-2 bg-gray-500 bg-opacity-25 flex justify-end ">
+                    <div class="text font-semibold text-gray-50">Home</div>
+                    <div class="icon">  &nbsp;   &nbsp; <i class='bx bx-home'></i></div>
+                </div>
+
+                <div class="link px-5 py-3 flex justify-end ">
+                    <div class="text">About</div>
+                    <div class="icon"> &nbsp;   &nbsp;<i class='bx bx-help-circle'></i></div>
+                </div>
+
+                <div class="link px-5 py-3 flex justify-end">
+                    <div class="text">Contact</div>
+                    <div class="icon">&nbsp;   &nbsp;<i class='bx bx-envelope' ></i></div>
+                </div>
+            </div>
+        </div>
+
+      <div class="main col-span-2 p-3">
+        <header class="flex justify-between items-start"  >
+            <div class="title">
+                <div class="main-title text-6xl font-bold ">Games</div>
+                <div class="sub-title text-3xl font-semibold text-green-500 mt-3">For Gamers</div>
+            </div>
+
+            <div class="user flex justify-end gap-5"> <!-- flex put items in same line , grid divide page in rows or colums -->
+                <div class="login font-semibold text-red-600 py-2 px-3 hover:text-green-500">Log in</div>
+                <div class="signup font-semibold text-red-600 cursor-pointer border-red-600 border-2 py-2 px-3 rounded-xl">Sign up</div>
+            </div>
+        </header>
+
+        <div class="games">
+            <section class="mt-7"><!-- m (margin) mt (margin top) w (width) h (height) -->
+                <div class="title text-3xl font-bold text-yellow-500 py-5 border-b border-yellow-500 mb-5">Latest Games</div>
+                <div class="cards grid grid-cols-3 gap-3">
+                    <div class="card h-100 w-full overflow-hidden relative rounded-2xl shadow-xl">
+                        <div class="image w-full h-full "><img src="img/assassins-creed-mirage.jpg"></div>
+                        <div class="title absolute bottom-0 bg-gray-700 bg-opacity-50 w-full py-1 px-2">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                         <div class="badge absolute top-0 text-sm font-semibold bg-black bg-opacity-50 text-yellow-400 py-2 px-3 rounded-full m-2">
+                           <span><i class='bx bx-star' style='color:#ebc537'  ></i></span>
+                           <span>4.5/5</span>
+                         </div>
+                    </div>
+                    <div class="card h-100 w-full overflow-hidden relative rounded-2xl shadow-xl">
+                        <div class="image w-full h-full "><img src="img/assassins-creed-mirage.jpg"></div>
+                        <div class="title absolute bottom-0 bg-gray-700 bg-opacity-50 w-full py-1 px-2">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                         <div class="badge absolute top-0 text-sm font-semibold bg-black bg-opacity-50 text-yellow-400 py-2 px-3 rounded-full m-2">
+                           <span><i class='bx bx-star' style='color:#ebc537'  ></i></span>
+                           <span>4.5/5</span>
+                         </div>
+                    </div>
+                    <div class="card h-100 w-full overflow-hidden relative rounded-2xl shadow-xl">
+                        <div class="image w-full h-full "><img src="img/assassins-creed-mirage.jpg"></div>
+                        <div class="title absolute bottom-0 bg-gray-700 bg-opacity-50 w-full py-1 px-2">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                         <div class="badge absolute top-0 text-sm font-semibold bg-black bg-opacity-50 text-yellow-400 py-2 px-3 rounded-full m-2">
+                           <span><i class='bx bx-star' style='color:#ebc537'  ></i></span>
+                           <span>4.5/5</span>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-7">
+                <div class="title text-3xl font-bold text-yellow-500 py-5 border-b border-yellow-500 mb-5">Most Popular</div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image"></div>
+                        <div class="title">
+                            <div class="main-title"></div>
+                            <div class="sub-title"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="load-more text-xl font-semibold flex justify-center text-gray-300 bg-blue-500 rounded-2xl ">
+               <span  class= "hover:text-black">Load More</span> 
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
